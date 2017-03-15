@@ -1,9 +1,9 @@
 <template id="main">
   <v-ons-splitter>
     <v-ons-splitter-side
-      swipeable width="150px" collapse=""
-      v-ons-open="openSide"
-      side="left"
+      swipeable width="150px" collapse="" side="left"
+      :open="openSide"
+      @update="openSide = $event"
     >
       <v-ons-page>
         <v-ons-list>
