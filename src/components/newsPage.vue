@@ -1,4 +1,4 @@
-<template id="news">
+<template>
   <v-ons-page>
     <custom-toolbar :title="'News'" :action="toggleMenu"></custom-toolbar>
     <p style="text-align: center">

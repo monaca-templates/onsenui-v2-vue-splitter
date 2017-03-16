@@ -1,4 +1,4 @@
-<template id="main">
+<template>
   <v-ons-splitter>
     <v-ons-splitter-side
       swipeable width="150px" collapse="" side="left"

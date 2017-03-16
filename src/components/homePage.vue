@@ -1,4 +1,4 @@
-<template id="home">
+<template>
     <v-ons-page>
       <custom-toolbar :title="'Home'" :action="toggleMenu"></custom-toolbar>
       <p style="text-align: center">
