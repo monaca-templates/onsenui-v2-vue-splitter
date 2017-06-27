@@ -2,8 +2,7 @@
   <v-ons-splitter>
     <v-ons-splitter-side
       swipeable width="150px" collapse="" side="left"
-      :open="openSide"
-      @update="openSide = $event"
+      :open.sync="openSide"
     >
       <v-ons-page>
         <v-ons-list>
