@@ -7,7 +7,7 @@
       <v-ons-page>
         <v-ons-list>
           <v-ons-list-header>Menu</v-ons-list-header>
-          <v-ons-list-item v-for="page in pages" tappable modifier="chevron"
+          <v-ons-list-item v-for="page in pages" :key="page" tappable modifier="chevron"
             @click="currentPage = page; openSide = false"
           >
             <div class="center">{{ page }}</div>

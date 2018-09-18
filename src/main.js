@@ -1,10 +1,10 @@
-import 'onsenui';
-import Vue from 'vue';
-import VueOnsen from 'vue-onsenui';
+// Webpack CSS import
+import 'onsenui/css/onsenui.css';
+import 'onsenui/css/onsen-css-components.css';
 
-// Onsen UI Styling and Icons
-require('onsenui/css-components-src/src/onsen-css-components.css');
-require('onsenui/css/onsenui.css');
+// JS import
+import Vue from 'vue';
+import VueOnsen from 'vue-onsenui'; // This already imports 'onsenui'
 
 import App from './App.vue';
 
