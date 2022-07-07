@@ -8,7 +8,8 @@
 </template>
 
 <script>
-  import customToolbar from './toolbar'
+  import customToolbar from './toolbar.vue';
+
   export default {
     props: ['toggleMenu'],
     components: { customToolbar }

@@ -1,23 +1,24 @@
-// Webpack CSS import
+import { createApp }  from 'vue';
+import VueOnsen from 'vue-onsenui';
+import * as components from 'vue-onsenui/esm/components';
+
+// Onsen UI Styling and Icons
 import 'onsenui/css/onsenui.css';
 import 'onsenui/css/onsen-css-components.css';
 
-// JS import
-import Vue from 'vue';
-import VueOnsen from 'vue-onsenui'; // This already imports 'onsenui'
-import ons from 'onsenui';
-
 import App from './App.vue';
 
-if (ons.platform.isIPhoneX()) {
+if (VueOnsen.platform.isIPhoneX()) {
   document.documentElement.setAttribute('onsflag-iphonex-portrait', '');
   document.documentElement.setAttribute('onsflag-iphonex-landscape', '');
 }
 
-Vue.use(VueOnsen);
+const app = createApp(App);
 
-new Vue({
-  el: '#app',
-  template: '<app></app>',
-  components:{App}
- });
+// Register all vue-onsenui components
+Object.values(components).forEach(component =>
+  app.component(component.name, component));
+
+app.use(VueOnsen);
+
+app.mount('#app');
