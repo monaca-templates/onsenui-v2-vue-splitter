@@ -1,6 +1,6 @@
 {
   "name": "onsenui-v2-vue-splitter",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "description": "",
   "dependencies": {
     "cordova-plugin-splashscreen": "6.0.0",
