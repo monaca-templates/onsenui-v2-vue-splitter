@@ -2,7 +2,7 @@
   <v-ons-splitter>
     <v-ons-splitter-side
       swipeable width="150px" collapse="" side="left"
-      :open.sync="openSide"
+      v-model:open="openSide"
     >
       <v-ons-page>
         <v-ons-list>
@@ -17,7 +17,7 @@
     </v-ons-splitter-side>
 
     <v-ons-splitter-content>
-      <div :is="currentPage" :toggle-menu="() => openSide = !openSide"></div>
+      <component :is="currentPage" :toggle-menu="() => openSide = !openSide"></component>
     </v-ons-splitter-content>
   </v-ons-splitter>
 </template>
