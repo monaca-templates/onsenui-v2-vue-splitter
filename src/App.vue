@@ -23,9 +23,9 @@
 </template>
 
 <script>
-  import home from './components/homePage'
-  import news from './components/newsPage'
-  import settings from './components/settingsPage'
+  import home from './components/homePage.vue'
+  import news from './components/newsPage.vue'
+  import settings from './components/settingsPage.vue'
   export default {
     data() {
       return {
